@@ -7,10 +7,10 @@ public class Main
             
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int x =1;
+        int s =2;// степень 2
         int sum=0;
-        while (x<=n){
-            sum+=x++;
+       for(int i= 1;i<=n;i++ ){
+            sum+=Math.pow(i, s);
         }
             System.out.print(sum);
 }  

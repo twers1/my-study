@@ -1,18 +1,18 @@
 import java.util.Scanner;
 public class Main
 {
-    // 7.Напишите программу, которая находит сумму квадратов натуральных чисел 
-    //  от 1 до n, где n вводится с клавиатуры.
+    // 7.Составьте программу, которая запрашивает ввод n чисел и считает их произведение. 
 	public static void main(String[] args) {
             
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int s =2;// степень 2
-        int sum=0;
-       for(int i= 1;i<=n;i++ ){
-            sum+=Math.pow(i, s);
+        double sum = 1;
+        for(int i=0;i<n;i++){
+            double a = sc.nextInt();
+            sum*=a;
+
         }
-            System.out.print(sum);
+        System.out.println(sum);
 }  
 }
 

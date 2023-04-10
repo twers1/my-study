@@ -12,7 +12,7 @@ public class Main
        }
        int a = sc.nextInt();
        for(int i : arr){ 
-        System.out.println(i*a);
+        System.out.println(arr[i]*a);
        }
 
 }  

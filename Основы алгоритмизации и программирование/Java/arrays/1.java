@@ -5,8 +5,8 @@ public class Main
     // Затем вводятся 2 числа из этого диапазона. Используя данные из массива найдите их кубы.
 	public static void main(String[] args) {
         int[] arr = new int[1000];
-        for(int i =0; i<1000; i++){
-            arr[i] = (i + 1) * (i + 1) * (i + 1);
+        for(int i =1; i<1000; i++){
+            arr[i] = i*i*i;
         }
         Scanner sc = new Scanner(System.in);
         int num1 = sc.nextInt();

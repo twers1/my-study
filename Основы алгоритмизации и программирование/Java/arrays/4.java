@@ -16,7 +16,7 @@ public class Main
     System.out.println("Выводим сумму элементов с четными индексами и числа: ");
     for (int i = 0; i < arr.length; i++) {
         
-        if(arr[i]%2==0){
+        if(i%2==0){
             sum+=arr[i];
             System.out.println("Числа: "+ arr[i]);
         }

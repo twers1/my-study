@@ -10,19 +10,11 @@ class Program : Student
 
         for (int i = 0; i < arr.Length; i++)
         {
-           Student.GetStudent();
+            Student.GetStudent();
         }
-        
-        void GetAdult(Student[] students)
-        {
-            for(int i=0; i < students.Length; i++)
-            {
-                students[i] = Student.GetStudent();
-                students.Where(student => student.age > 18);
-            }
-        }
+
         GetAdult(arr);
-            
+
     }
 
 }
@@ -69,5 +61,13 @@ class Student
         Console.WriteLine($"Фамилия: {lastName}");
         Console.WriteLine($"Возраст: {age}");
         Console.WriteLine($"Группа: {group}");
+    }
+    public static void GetAdult(Student[] students)
+    {
+        for (int i = 0; i < students.Length; i++)
+        {
+            students.Where(student => student.age > 18);
+        }
+        
     }
 }

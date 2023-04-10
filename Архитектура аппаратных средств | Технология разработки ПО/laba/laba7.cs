@@ -26,15 +26,7 @@ class Student
 {
 
 
-    public static Student GetAdult(Student[] arr)
-    {
-        Student student = new Student();
-        foreach (var item in arr)
-        {
-            Console.WriteLine(item);
-        }
-        return student;
-    }
+    
     public string firstName { get; set; }
     public string lastName { get; set; }
     public int age { get; set; }
@@ -70,4 +62,14 @@ class Student
         }
         
     }
+    //public static Student GetAdult(Student[] arr)
+    //{
+    //    Student student = new Student();
+    //    foreach (var item in arr)
+    //    {
+    //        if (item.age > 18)
+    //            Console.WriteLine(item);
+    //    }
+    //    return student;
+    //}
 }

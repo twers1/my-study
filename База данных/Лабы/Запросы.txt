@@ -1,0 +1,19 @@
+select product_id, product_name, units_in_stock - units_on_order as difference
+from products;
+
+select * from products
+
+select product_id, product_name,units_in_stock;
+
+select * from employees;
+select distinct country from employees;
+
+select distinct city    from employees;
+
+select distinct country, city from employees;
+
+select * from orders;
+
+select count(*) from orders;
+select * from employees;
+select count(distinct country) from employees;

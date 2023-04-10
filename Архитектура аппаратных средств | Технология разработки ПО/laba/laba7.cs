@@ -13,7 +13,7 @@ class Program : Student
             Student.GetStudent();
         }
 
-        GetAdult(arr);
+        GetAdult(arr).Print();
 
     }
 
@@ -54,22 +54,15 @@ class Student
         Console.WriteLine($"Возраст: {age}");
         Console.WriteLine($"Группа: {group}");
     }
-    public static void GetAdult(Student[] students)
+    public static Student GetAdult(Student[] students)
     {
+        Student balbes = new Student();
         for (int i = 0; i < students.Length; i++)
         {
-            students.Where(student => student.age > 18);
+            if (students[i].age > 18)
+                balbes = students[i];
         }
-        
+        return balbes;
     }
-    //public static Student GetAdult(Student[] arr)
-    //{
-    //    Student student = new Student();
-    //    foreach (var item in arr)
-    //    {
-    //        if (item.age > 18)
-    //            Console.WriteLine(item);
-    //    }
-    //    return student;
-    //}
+
 }

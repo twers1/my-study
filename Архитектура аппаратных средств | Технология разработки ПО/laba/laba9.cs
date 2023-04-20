@@ -13,63 +13,88 @@ class Program
 
         Console.WriteLine("Введите мне размер массива");
         int n = Int32.Parse(Console.ReadLine());
+
         int[] arr = new int[n];
+
 
         Console.WriteLine("Введите мне элементы массива ");
         for (int i = 0; i < arr.Length; i++)
         {
             arr[i] = Convert.ToInt32(Console.ReadLine());
         }
-        Console.WriteLine("Нажми на клавиши 1, 2, 3");
+        Console.WriteLine("Выберите действие(1,2,3)");
 
-        
+
         Console.WriteLine(ArrCalc(arr));
         
 
     }
-    static int ArrCalc(params int[] parametres)
+    static int ArrCalc(params int[] arr)
     {
         ConsoleKey key = Console.ReadKey().Key;
-        int sum = 0;
+        int sum =0;
         int max = 0;
+        int result;
+
 
         if (key == ConsoleKey.NumPad1)
         {
-            for (int i = 0; i < parametres.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                sum += parametres[i];
-                return sum;
+                sum += arr[i];
             }
-            
+            Console.WriteLine("Сумма: " + sum);
         }
 
 
-        if (key == ConsoleKey.NumPad2)
+        else if(key == ConsoleKey.NumPad2)
         {
-            for (int i = 0; i < parametres.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                sum += parametres[i];
-                return sum / parametres.Length;
+                sum += arr[i];
             }
-            
+            result = sum / arr.Length;
+            Console.WriteLine("Среднее арифметическое: " + result);
         }
-        if (key == ConsoleKey.NumPad3)
+
+
+        /* ВТОРОЙ СПОСОБ (ЧИТАБЕЛЬНЫЙ) */
+        //for (int i = 0; i < arr.Length; i++)
+        //{
+        //    sum += arr[i];
+        //}
+        //result = sum / arr.Length;
+        //if (key == ConsoleKey.NumPad2)
+        //{
+        //    Console.WriteLine("avg" + result);
+        //}
+
+        //if (key == ConsoleKey.NumPad1)
+        //{
+        //    Console.WriteLine("Сумма" + sum);
+
+        //}
+
+        else if(key == ConsoleKey.NumPad3)
         {
-            for (int i = 0; i < parametres.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (parametres[i] > max)
+                if (arr[i] > max)
                 {
-                    max = parametres[i];
-                    return max;
+                    max = arr[i];
+                    
                 }
             }
-            
+            Console.WriteLine("Максимальное значение: " + max);
+
         }
         else
         {
-            Console.WriteLine("Неверная операция");
+            Console.WriteLine("Неверная операция!");
         }
-        return ArrCalc();
+
+        
+        return ArrCalc(arr);
     }
 
 }

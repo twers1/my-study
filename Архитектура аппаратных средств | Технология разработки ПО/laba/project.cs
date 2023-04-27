@@ -55,6 +55,11 @@ class Car
     public int speedCar { get; set; }
     public Engine engineCar { get; set; }
 
+    public Car()
+    {
+
+    }
+
     public Car(int speedCar, Engine engineCar)
     {
         this.speedCar = speedCar;
@@ -66,20 +71,18 @@ class Car
     {
         //Console.WriteLine("Введите какое количество машин будет в вашем массиве: ");
         //int n = Convert.ToInt32(Console.ReadLine());
-        Car[] cars = new Car[2];
-        cars[0] = new Car(140, new Engine(15.5, "Плохой двигатель"));
-        cars[1] = new Car(300, new Engine(200, "Лучший двигатель"));
-        Car fasterCar = cars[0];
+
+        Car car = new Car();
         int maxSpeed = 0;
-        foreach (Car car in cars)
+        for (int i = 0; i < array.Length; i++)
         {
-            if(car.speedCar > maxSpeed)
+            if(array[i].speedCar > maxSpeed)
             {
-                maxSpeed = car.speedCar;
+                maxSpeed = array[i].speedCar;
             }
         }
-        Console.WriteLine("Максимальная скорость: " + maxSpeed);
-        return fasterCar;
+        
+        return car;
         
 
     }

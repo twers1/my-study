@@ -1,0 +1,8 @@
+C:\Users\Admin\source\repos\Light\Light\obj\Debug\Light.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Light\Light\obj\Debug\Light.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\Light\Light\obj\Debug\Light.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Light\Light\bin\Debug\Light.exe.config
+C:\Users\Admin\source\repos\Light\Light\bin\Debug\Light.exe
+C:\Users\Admin\source\repos\Light\Light\bin\Debug\Light.pdb
+C:\Users\Admin\source\repos\Light\Light\obj\Debug\Light.exe
+C:\Users\Admin\source\repos\Light\Light\obj\Debug\Light.pdb

@@ -9,7 +9,7 @@ namespace Light
 {
     class MyJucier : Jucier
     {
-        public void makeJuice(Fruit[] array)
+        public void makeJuice(Fruit[] array) 
         {
             Console.WriteLine("Начинаю делать сок");
             Thread.Sleep(1000);
@@ -25,6 +25,7 @@ namespace Light
 
 
             int countFruitCitrus = 0;
+            int countFruitNotCitrus = 0;
             foreach (var item in array)
             {
                 // item.ToString();
@@ -32,8 +33,13 @@ namespace Light
                 {
                     countFruitCitrus++;
                 }
+                else
+                {
+                    countFruitNotCitrus++;
+                }
             }
             Console.WriteLine("Количество цитрусов: " + countFruitCitrus);
+            Console.WriteLine("Количество не цитрусов: " + countFruitNotCitrus);
 
             int countApples = 0;
             for (int i = 0; i < array.Length; i++)
@@ -44,6 +50,10 @@ namespace Light
                 }
             }
             Console.WriteLine("Количество яблок: " + countApples);
+
+           
+            
+            
 
 
         }

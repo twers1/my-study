@@ -18,8 +18,7 @@ namespace Light
         {
             MyJucier myJucier = new MyJucier();
 
-            Fruit[] array = 
-            {
+            Fruit[] array = {
                 new Apple(), new Banana(), new Orange(), new Apple(), new Lemon(), new Apple(), new Lemon()
             };
 

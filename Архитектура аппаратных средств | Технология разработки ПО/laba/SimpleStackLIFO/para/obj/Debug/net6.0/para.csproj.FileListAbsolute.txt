@@ -1,0 +1,15 @@
+C:\Users\Admin\source\repos\para\para\bin\Debug\net6.0\para.exe
+C:\Users\Admin\source\repos\para\para\bin\Debug\net6.0\para.deps.json
+C:\Users\Admin\source\repos\para\para\bin\Debug\net6.0\para.runtimeconfig.json
+C:\Users\Admin\source\repos\para\para\bin\Debug\net6.0\para.dll
+C:\Users\Admin\source\repos\para\para\bin\Debug\net6.0\para.pdb
+C:\Users\Admin\source\repos\para\para\obj\Debug\net6.0\para.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\para\para\obj\Debug\net6.0\para.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\para\para\obj\Debug\net6.0\para.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\para\para\obj\Debug\net6.0\para.AssemblyInfo.cs
+C:\Users\Admin\source\repos\para\para\obj\Debug\net6.0\para.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\para\para\obj\Debug\net6.0\para.dll
+C:\Users\Admin\source\repos\para\para\obj\Debug\net6.0\refint\para.dll
+C:\Users\Admin\source\repos\para\para\obj\Debug\net6.0\para.pdb
+C:\Users\Admin\source\repos\para\para\obj\Debug\net6.0\para.genruntimeconfig.cache
+C:\Users\Admin\source\repos\para\para\obj\Debug\net6.0\ref\para.dll

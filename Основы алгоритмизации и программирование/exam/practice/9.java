@@ -7,6 +7,16 @@ public class Main
    // всех чисел от a до b включительно
 	public static void main(String[] args) {
         
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите два числа ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        
+        int multiply = 0;
+        for(int i=0; a <=b; i++){
+            multiply = a*b;
+        }
+        System.out.println("Ответ на задание: " + multiply);
             
 
 }  

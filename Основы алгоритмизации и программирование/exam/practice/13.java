@@ -7,16 +7,15 @@ public class Main
 
    
 	public static void main(String[] args) {
+        System.out.println("Введите число: ");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите число ");
         int n = sc.nextInt();
-        
-        int multiply = 0;
-        for(int i = 1; i<=5; i++){
-            multiply = i*n;
-            System.out.println("Ответ на задание: " + multiply);
+        for(int i = 0; i<=n; i++) {
+            for(int j = 1; j<=5; j++){
+                System.out.print(n);
+            }
+            System.out.println(" ");
         }
-            
 
 }  
 }

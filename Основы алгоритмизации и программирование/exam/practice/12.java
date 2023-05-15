@@ -8,7 +8,17 @@ public class Main
    
 	public static void main(String[] args) {
         
-            
+        int x = 3333;
+        int q = 0;
+        
+        while(x!=0){
+          int n = x%10;
+          if (n == 3){
+              q++;
+          }
+          x /= 10;
+        }
+        System.out.println(q);
 
 }  
 }

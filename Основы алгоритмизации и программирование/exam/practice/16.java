@@ -8,7 +8,16 @@ public class Main
    
 	public static void main(String[] args) {
         
-            
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите любое число");
+        int n = sc.nextInt();
+        
+        if(n>100 && n<1000){
+            System.out.println("Число является трехзначным");
+        }
+        else {
+            System.out.println("nope");
+        }
 
 }  
 }

@@ -13,7 +13,7 @@ public class Main
         double a = sc.nextDouble();
         double b = sc.nextDouble();
         
-        if(a/b != 0){
+        if(b != 0){
             System.out.println("Частное чисел: " + a/b);
         }
         else {

@@ -12,9 +12,9 @@ public class Main
         int a = sc.nextInt();
         int b = sc.nextInt();
         
-        int multiply = 0;
-        for(int i=0; a <=b; i++){
-            multiply = a*b;
+        int multiply = 1;
+        for(int i = a; i <=b; i++){
+            multiply *= i ;
         }
         System.out.println("Ответ на задание: " + multiply);
             

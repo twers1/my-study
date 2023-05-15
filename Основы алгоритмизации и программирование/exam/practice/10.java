@@ -10,11 +10,14 @@ public class Main
         System.out.println("Введите число ");
         int a = sc.nextInt();
         
-        int multiply = 0;
-        for(int i=0; i<=9; i++){
-            multiply = i*a;
-            System.out.println("Ответ на задание: " + multiply);
+        int multiply = 1;
+        while(a!=0){
+            int temp = a%10;
+            multiply *= temp;
+            a /=10;
         }
+        
+        System.out.println(multiply);
         
             
 

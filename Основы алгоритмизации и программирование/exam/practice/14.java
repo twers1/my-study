@@ -15,8 +15,7 @@ public class Main
         int[] arr = new int[n];
         
         System.out.println("Введите элементы: ");
-        for(int i=1; i< arr.length; i++5
-        ){
+        for(int i=1; i< arr.length; i++){
             arr[i] = sc.nextInt();
         }
         

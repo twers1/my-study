@@ -1,21 +1,22 @@
 #include <iostream>
-#include <cmath>
+
+using namespace std;
 
 int main() {
     double weight;
     double height;  
 
-    std::cout << "Введите ваш вес (в килограммах): ";
-    std::cin >> weight;
+    cout << "Введите ваш вес (в килограммах): ";
+    cin >> weight;
 
-    std::cout << "Введите ваш рост (в сантиметрах): ";
-    std::cin >> height;
+    cout << "Введите ваш рост (в сантиметрах): ";
+    cin >> height;
 
     double heightInMeters = height / 100.0;
 
     double indexmassbody = weight / (heightInMeters * heightInMeters);
 
-    std::cout << "Ваш индекс массы тела (ИМТ) составляет: " << indexmassbody << std::endl;
+    cout << "Ваш индекс массы тела (ИМТ) составляет: " << indexmassbody << endl;
 
     return 0;
 }

@@ -1,15 +1,17 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
     double radius;
     const double pi = 3.14;
 
-    std::cout << "Введите радиус круга: ";
-    std::cin >> radius;
+    cout << "Введите радиус круга: ";
+    cin >> radius;
 
     double area = pi * (radius*radius);
 
-    std::cout << "Площадь круга с радиусом " << radius << " равна: " << area << std::endl;
+    cout << "Площадь круга с радиусом " << radius << " равна: " << area << endl;
 
     return 0; 
 }

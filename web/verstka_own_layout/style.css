@@ -1,0 +1,108 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('img/backgroud.png');
+    backgroud-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+nav {
+    align-self: flex-start; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2em;
+    align-self: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type=email] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.btn {
+    padding: 10px 20px; 
+    background: linear-gradient(to right, 
+        rgba(128, 11, 245, 1) 0%,
+        rgba(103, 63, 246, 1) 20%, 
+        rgba(86, 97, 247, 1) 40%, 
+        rgba(37, 198, 249, 1) 60%); 
+    height: 50px;
+    width: 200px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+    background: linear-gradient(to right, 
+        rgba(37, 198, 249, 1) 0%,
+        rgba(86, 97, 247, 1) 20%, 
+        rgba(103, 63, 246, 1) 40%, 
+        rgba(128, 11, 245, 1) 60%); 
+}
+
+main {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column; /* Теперь элементы будут расположены вертикально */
+}
+
+.form {
+    width: 30%;
+}
+
+.game-cards-container {
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    color: white;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+
+.form h1, p {
+    color: white;
+}
+
+
+.game-card h2 {
+    color: #5c7cfa;
+}
